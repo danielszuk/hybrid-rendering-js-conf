@@ -1,5 +1,7 @@
 import express from "express";
 import { readFileAsString } from "./utils/read-file-as-string";
+import ReactDOMServer from "react-dom/server";
+import { render } from "./entry-server";
 
 const port = 3000;
 
@@ -16,7 +18,11 @@ router.use(express.static("dist/client"));
 
 // App
 router.get("/", async (_req, res) => {
-  const html = readFileAsString("dist/client/src/entry-client.html");
+  const template = readFileAsString("dist/client/src/entry-client.html");
+  const html = template.replace(
+    "<!--content-html-->",
+    ReactDOMServer.renderToString(render())
+  );
   res.status(200).send(html);
 });
 
