@@ -1,4 +1,5 @@
 import express from "express";
+import { readFileAsString } from "./utils/read-file-as-string";
 
 const port = 3000;
 
@@ -12,6 +13,12 @@ router.get("/health", (_req, res) => {
 
 // Static Assets
 router.use(express.static("dist/client"));
+
+// App
+router.get("/", async (_req, res) => {
+  const html = readFileAsString("dist/client/src/entry-client.html");
+  res.status(200).send(html);
+});
 
 // Start router
 router.listen(port, () => {
