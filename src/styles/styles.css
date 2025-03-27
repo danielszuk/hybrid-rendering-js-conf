@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+body {
+  @apply font-sans antialiased m-6 bg-neutral-50;
+}
+
+/* Card */
+.card-list {
+  @apply flex flex-wrap gap-4;
+}
+.card {
+  @apply bg-white shadow-md rounded-lg p-6 w-sm;
+}
+.card-title {
+  @apply text-xl font-bold mb-2;
+}
+.card-content {
+  @apply text-gray-700;
+}
+.card-sub {
+  @apply text-sm text-gray-500 mt-2;
+}
+
+/* Selectors */
+.selector-container {
+  @apply flex items-center justify-between gap-4 pb-6 mb-6 border-b border-gray-300;
+}
+.selector {
+  @apply flex flex-col;
+}
+.selector-label {
+  @apply mb-1 text-sm font-bold text-gray-700;
+}
+.selector-select {
+  @apply mt-1 block w-full pl-1 pr-4 py-2 border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 rounded-md text-base sm:text-sm;
+}

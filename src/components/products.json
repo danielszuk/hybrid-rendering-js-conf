@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "name": "Wireless Mouse",
+    "description": "A sleek and ergonomic wireless mouse for everyday use.",
+    "price": 29.99
+  },
+  {
+    "id": "2",
+    "name": "Mechanical Keyboard",
+    "description": "A durable keyboard with customizable RGB lighting.",
+    "price": 89.99
+  },
+  {
+    "id": "3",
+    "name": "Gaming Headset",
+    "description": "High-quality headset with surround sound and noise cancellation.",
+    "price": 59.99
+  },
+  {
+    "id": "4",
+    "name": "Smartphone Stand",
+    "description": "Adjustable stand for smartphones and tablets.",
+    "price": 14.99
+  },
+  {
+    "id": "5",
+    "name": "USB-C Hub",
+    "description": "Multi-port hub with HDMI, USB, and SD card slots.",
+    "price": 39.99
+  },
+  {
+    "id": "6",
+    "name": "Portable Charger",
+    "description": "Compact power bank with fast charging capabilities.",
+    "price": 24.99
+  },
+  {
+    "id": "7",
+    "name": "Bluetooth Speaker",
+    "description": "Waterproof speaker with excellent sound quality.",
+    "price": 49.99
+  },
+  {
+    "id": "8",
+    "name": "Webcam",
+    "description": "1080p HD webcam with built-in microphone for video calls.",
+    "price": 69.99
+  },
+  {
+    "id": "9",
+    "name": "LED Desk Lamp",
+    "description": "Energy-efficient desk lamp with adjustable brightness.",
+    "price": 19.99
+  },
+  {
+    "id": "10",
+    "name": "External Hard Drive",
+    "description": "1TB external hard drive for secure data storage.",
+    "price": 79.99
+  }
+]
